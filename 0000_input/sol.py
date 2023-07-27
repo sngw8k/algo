@@ -34,7 +34,7 @@ for number in numbers:
         print(f'{number}은 홀수')
 
 
-# 2차월 리스트 input 받기
+# 2차원 리스트 input 받기
 N = int(input())
 matrix = []
 
