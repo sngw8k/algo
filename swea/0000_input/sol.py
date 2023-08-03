@@ -46,4 +46,25 @@ for row in matrix:
     for item in row:
         if item == 5:
             print('5가 있습니다.')
+
+
+# 2차원 리스트 탐색
+
+N, M = map(int, input().split())
+matrix = []
+
+for i in range(N):
+    numbers= list(map(int, input().split()))
+    matrix.append(numbers)
+
+# 가로줄을 우선 탐색 (좌우)
+for row in range(len(matrix)):
+    for col in range(len(matrix[0])):
+        print(matrix[row][col])
+
+# 세로줄을 우선 탐색 (상하)
+for col in range(len(matrix[0])):
+    for row in range(len(matrix)):
+        print(matrix[row][col])
+
         
