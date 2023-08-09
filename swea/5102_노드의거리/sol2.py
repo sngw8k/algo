@@ -42,7 +42,7 @@ for tc in range(1, T+1):
 
         # print(queue)
         now = queue.pop(0)
-        check_list[now] = True
+        #check_list[now] = True
 
         # now와 연결된 다른 노드들 순회
         for link in range(V+1):

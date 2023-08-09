@@ -48,13 +48,14 @@ for tc in range(1, T+1):
             if nodes[now][link] == 1:
                 # 방문하지 않았다면
                 if not check_list[link]:
+                    check_list[link] = True
                     # 큐에 추가
                     queue.append(link)
 
                     # 이전 노드의 거리 +1
                     distance[link] = distance[now] + 1
     
-    print(distance)
+    # print(distance)
     print(f'#{tc} {distance[G]}')
     # print(f'#{tc} {result}')
 

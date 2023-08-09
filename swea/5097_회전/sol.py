@@ -13,10 +13,15 @@ for tc in range(1, T+1):
 
     queue = list(map(int, input().split()))
 
+    # 직접 M번 반복
     for i in range(M):
         S = queue.pop(0)
         queue.append(S)
     
     print(f'#{tc} {queue[0]}')
 
+# --------------------------------------------------
+
+    # remain = M % N
+    # print (numbers[remain])
 
